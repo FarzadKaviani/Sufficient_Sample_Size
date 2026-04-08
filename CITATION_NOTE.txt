@@ -1,0 +1,15 @@
+Supplementary software package prepared for the manuscript:
+
+Sample Size Effects on Morphological and Particle Size Distribution Characteristics of Granular Materials: 2D and 3D Analyses
+
+Authors:
+Farzad Kaviani-Hamedani
+Arman Khoshghalb
+Mahdi Esmailzade
+Nasser Khalili
+
+Affiliation:
+Civil and Environmental Engineering, University of New South Wales, Sydney, Australia
+
+Suggested repository title:
+Bayesian sufficient sample size estimation for morphological and PSD descriptors of granular materials
