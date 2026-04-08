@@ -5,10 +5,11 @@ This package is a journal-oriented refactoring of the uploaded research code for
 **Sample Size Effects on Morphological and Particle Size Distribution Characteristics of Granular Materials: 2D and 3D Analyses**
 
 **Authors**
-- Farzad Kaviani-Hamedani
-- Arman Khoshghalb
-- Mahdi Esmailzade
-- Nasser Khalili
+
+* Farzad Kaviani-Hamedani
+* Arman Khoshghalb
+* Mohammad Esmailzade
+* Nasser Khalili
 
 **Affiliation**
 Civil and Environmental Engineering, University of New South Wales, Sydney, Australia.
@@ -17,10 +18,10 @@ Civil and Environmental Engineering, University of New South Wales, Sydney, Aust
 
 The original single-file UI script was reorganized into four modules:
 
-- `bayes_sss_core.py` — scientific computation and reproducible outputs
-- `bayes_sss_plots.py` — figure generation
-- `bayes_sss_cli.py` — command-line interface for supplementary-material reproducibility
-- `bayes_sss_ui.py` — desktop Tkinter interface for interactive use
+* `bayes\_sss\_core.py` — scientific computation and reproducible outputs
+* `bayes\_sss\_plots.py` — figure generation
+* `bayes\_sss\_cli.py` — command-line interface for supplementary-material reproducibility
+* `bayes\_sss\_ui.py` — desktop Tkinter interface for interactive use
 
 ## Methodological consistency with the manuscript
 
@@ -36,56 +37,57 @@ The package preserves the manuscript workflow:
 
 Default values consistent with the manuscript are retained:
 
-- `N_sim = 100`
-- `batch_size = 10`
-- `consecutive_k = 5`
+* `N\_sim = 100`
+* `batch\_size = 10`
+* `consecutive\_k = 5`
 
 ## Outputs
 
 The package writes reproducible outputs such as:
 
-- `run_metadata.json`
-- `sufficient_sample_summary.csv`
-- `*_delta_mu_envelope.csv`
-- `*_delta_mu_plot.png`
-- optional `*_delta_mu_traces.csv`
-- `median_monte_carlo/*.csv`
-- `median_monte_carlo/*.png`
+* `run\_metadata.json`
+* `sufficient\_sample\_summary.csv`
+* `\*\_delta\_mu\_envelope.csv`
+* `\*\_delta\_mu\_plot.png`
+* optional `\*\_delta\_mu\_traces.csv`
+* `median\_monte\_carlo/\*.csv`
+* `median\_monte\_carlo/\*.png`
 
 ## Example CLI use
 
 ```bash
-python bayes_sss_cli.py \
-  --input morphological_indices.csv \
-  --out outputs \
-  --columns Sphericity Roundness Elongation \
-  --mode both \
-  --model known_var \
-  --mu0 0.0 \
-  --sigma0 1.0 \
-  --sigma-obs 1.0 \
-  --n-sim 100 \
-  --batch-size 10 \
-  --tolerance 0.02 \
-  --consecutive-k 5 \
+python bayes\_sss\_cli.py \\
+  --input morphological\_indices.csv \\
+  --out outputs \\
+  --columns Sphericity Roundness Elongation \\
+  --mode both \\
+  --model known\_var \\
+  --mu0 0.0 \\
+  --sigma0 1.0 \\
+  --sigma-obs 1.0 \\
+  --n-sim 100 \\
+  --batch-size 10 \\
+  --tolerance 0.02 \\
+  --consecutive-k 5 \\
   --seed 42
 ```
 
 ## Example UI use
 
 ```bash
-python bayes_sss_ui.py
+python bayes\_sss\_ui.py
 ```
 
 ## Python requirements
 
-- Python 3.10+
-- numpy
-- pandas
-- matplotlib
+* Python 3.10+
+* numpy
+* pandas
+* matplotlib
 
 Tkinter is included with most standard Python desktop installations.
 
 ## Recommended citation note for supplementary material
 
 Use this package as the archived supplementary implementation associated with the manuscript above. If you upload it to a repository, add the final DOI or repository URL to the paper where the manuscript currently shows a placeholder `(link)`.
+
