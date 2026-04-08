@@ -8,7 +8,7 @@ This package is a journal-oriented refactoring of the uploaded research code for
 
 * Farzad Kaviani-Hamedani
 * Arman Khoshghalb
-* Mohammad Esmailzade
+* Mohammad Esmailzadeh
 * Nasser Khalili
 
 **Affiliation**
@@ -18,10 +18,10 @@ Civil and Environmental Engineering, University of New South Wales, Sydney, Aust
 
 The original single-file UI script was reorganized into four modules:
 
-* `bayes\_sss\_core.py` — scientific computation and reproducible outputs
-* `bayes\_sss\_plots.py` — figure generation
-* `bayes\_sss\_cli.py` — command-line interface for supplementary-material reproducibility
-* `bayes\_sss\_ui.py` — desktop Tkinter interface for interactive use
+* `bayes\\\_sss\\\_core.py` — scientific computation and reproducible outputs
+* `bayes\\\_sss\\\_plots.py` — figure generation
+* `bayes\\\_sss\\\_cli.py` — command-line interface for supplementary-material reproducibility
+* `bayes\\\_sss\\\_ui.py` — desktop Tkinter interface for interactive use
 
 ## Methodological consistency with the manuscript
 
@@ -37,45 +37,45 @@ The package preserves the manuscript workflow:
 
 Default values consistent with the manuscript are retained:
 
-* `N\_sim = 100`
-* `batch\_size = 10`
-* `consecutive\_k = 5`
+* `N\\\_sim = 100`
+* `batch\\\_size = 10`
+* `consecutive\\\_k = 5`
 
 ## Outputs
 
 The package writes reproducible outputs such as:
 
-* `run\_metadata.json`
-* `sufficient\_sample\_summary.csv`
-* `\*\_delta\_mu\_envelope.csv`
-* `\*\_delta\_mu\_plot.png`
-* optional `\*\_delta\_mu\_traces.csv`
-* `median\_monte\_carlo/\*.csv`
-* `median\_monte\_carlo/\*.png`
+* `run\\\_metadata.json`
+* `sufficient\\\_sample\\\_summary.csv`
+* `\\\*\\\_delta\\\_mu\\\_envelope.csv`
+* `\\\*\\\_delta\\\_mu\\\_plot.png`
+* optional `\\\*\\\_delta\\\_mu\\\_traces.csv`
+* `median\\\_monte\\\_carlo/\\\*.csv`
+* `median\\\_monte\\\_carlo/\\\*.png`
 
 ## Example CLI use
 
 ```bash
-python bayes\_sss\_cli.py \\
-  --input morphological\_indices.csv \\
-  --out outputs \\
-  --columns Sphericity Roundness Elongation \\
-  --mode both \\
-  --model known\_var \\
-  --mu0 0.0 \\
-  --sigma0 1.0 \\
-  --sigma-obs 1.0 \\
-  --n-sim 100 \\
-  --batch-size 10 \\
-  --tolerance 0.02 \\
-  --consecutive-k 5 \\
+python bayes\\\_sss\\\_cli.py \\\\
+  --input morphological\\\_indices.csv \\\\
+  --out outputs \\\\
+  --columns Sphericity Roundness Elongation \\\\
+  --mode both \\\\
+  --model known\\\_var \\\\
+  --mu0 0.0 \\\\
+  --sigma0 1.0 \\\\
+  --sigma-obs 1.0 \\\\
+  --n-sim 100 \\\\
+  --batch-size 10 \\\\
+  --tolerance 0.02 \\\\
+  --consecutive-k 5 \\\\
   --seed 42
 ```
 
 ## Example UI use
 
 ```bash
-python bayes\_sss\_ui.py
+python bayes\\\_sss\\\_ui.py
 ```
 
 ## Python requirements
